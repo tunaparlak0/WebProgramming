@@ -1,0 +1,12 @@
+@model CarPage.Models.Car
+
+
+<h1>@Model.Make @Model.Model (@Model.Year)</h1>
+<img src="@Model.ImageUrl" alt="@Model.Make @Model.Model" style="width:200px;height:auto;" />
+<p><strong>Price:</strong> $@Model.Price</p>
+<p><strong>Description:</strong> @Model.Description</p>
+<p><strong>Vehicle Status:</strong> @Model.VehicleStatus</p>
+<p><strong>Transmission:</strong> @Model.Transmission</p>
+<p><strong>Fuel Type:</strong> @Model.FuelType</p>
+<p><strong>Color:</strong> @Model.Color</p>
+<p><strong>Engine Power:</strong> @Model.EnginePower</p>
