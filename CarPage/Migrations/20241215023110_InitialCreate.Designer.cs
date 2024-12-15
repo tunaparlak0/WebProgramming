@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarPage.Migrations
 {
     [DbContext(typeof(CarContext))]
-    [Migration("20241214232027_InitialCreate")]
+    [Migration("20241215023110_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -52,8 +52,8 @@ namespace CarPage.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Price")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Transmission")
                         .IsRequired()

@@ -9,7 +9,6 @@
                 <p>Price: $@car.Price</p>
                 <p>Description: @car.Description</p>
                  <a href="@Url.Action("Details", "Car", new { id = car.Id })" class="details-link">Details</a>
-                <button class="purchase-button">Purchase</button>
             </div>
         </div>
     }
@@ -38,11 +37,6 @@
         flex: 1;
         margin-left: 20px;
         position: relative;
-    }
-    .purchase-button {
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
     }
     
 </style>

@@ -7,10 +7,18 @@
     <link rel="stylesheet" href="~/css/site.css" />
     <script src="~/js/site.js"></script>
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
         header, footer {
             background-color: #d7dbe4;
             text-align: center;
             padding: 10px 0;
+        }
+        main {
+            min-height: calc(100vh - 120px); /* Adjust based on header and footer height */
         }
     </style>
 </head>

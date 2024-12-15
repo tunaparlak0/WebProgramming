@@ -30,5 +30,7 @@ namespace CarPage.Controllers
             SeedData.Initialize(_serviceProvider);
             return View(_context.Cars.ToList());
         }
+        
+        
     }
 }
